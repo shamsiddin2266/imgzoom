@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 1px solid;
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .menu{
+            width: 900px;
+            height: 60px;
+            border-bottom: 1px dotted #bbb;
+        }
+        .menu ul li{
+            list-style: none;
+            float: left;
+            width: 180px;
+            transition: all .2s;
+            line-height: 60px;
+            text-align: center;
+        }
+        .menu ul li a{
+            transition: all .5s;
+        }
+        .menu ul li:hover{
+            background-color: #333;
+        }
+        .menu ul li:hover a{
+            display: block;
+            color: #fff;
+            text-decoration: underline;
+            text-decoration-color: #ff0070;
+            transform: scale(1.1);
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color: #000;
+        }
+        .img{
+            margin-top: 10px;
+            width: 223px;
+            height: 195px;
+            border: 1px solid;
+            float: left;
+            position: absolute;
+        }
+        .n2{left: 224px;}
+        .n3{left: 448px;}
+        .n4{left: 672px;}
+        img{
+            width: 100px;
+            height: 75px;
+            margin: 60px;
+            transition: all .3s;
+        }
+        .img:hover img{
+            border: none;
+            position: absolute;
+            margin: 0;
+            height: 195px;
+            width: 223px;
+        }
+        .image{
+            height: 250px;
+        }
+        .texts{
+            text-align: center;
+            position: relative;
+        }
+        p{
+            margin-top: 10px;
+        }
+        .text1{
+            position: absolute;
+            left: 100px;
+            right: 100px;
+            transition: all .4s;
+        }
+        .text2{
+            top: 0;
+            position: absolute;
+            opacity: 0;
+            left: 100px;
+            right: 100px;
+            transition: all .4s;
+        }
+        .texts:hover .text2{
+            opacity: 1;
+        }
+        .texts:hover .text1{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Call</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+        </div>
+            <div class="image">
+                <div class="img n1"><img src="img100.jpg" alt=""></div>
+                <div class="img n2"><img src="img101.png" alt=""></div>
+                <div class="img n3"><img src="img102.jpg" alt=""></div>
+                <div class="img n4"><img src="img103.png" alt=""></div>
+            </div>            
+        <div class="texts">
+            <div class="text1">
+                     Reign over the game world with the combined power of an 12th Gen Intel® Core™ i7 processor1 and up to NVIDIA® GeForce RTX™ 30 Series GPUs(fully optimized for maximum MGP). Configure your laptop for top speed and massive storage with two slots for GEN 4 M.2 PCIe and up to 32GB of DDR4 3200 RAM.
+                    Dominating Built for the Next Generation of Gaming
+                    12th Gen Intel® Core™ processors give you superior gaming performance while delivering the flexibility to seamlessly multitask. Innovative new architecture matches the right core to the right workload, so background tasks won’t interrupt your game - giving you the freedom to chat, browse, stream, edit, record, and play without skipping a beat.
+                </div>
+                <div class="text2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequuntur autem nisi, pariatur quasi, minima dolorem ea sint repellendus excepturi quod aspernatur quas illum eos accusantium nostrum natus omnis fugiat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate porro neque, nulla obcaecati animi hic repudiandae enim dolore sapiente recusandae ut fuga consectetur quo officia ullam? Hic dignissimos cupiditate dolorem?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci natus magni totam nobis aut unde cupiditate velit. Quisquam distinctio aliquam repellat qui tempora debitis reprehenderit cupiditate, molestiae dolorum provident aperiam.
+                </div>
+        </div>
+    </div>
+</body>
+</html>
